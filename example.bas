@@ -1,7 +1,3 @@
-# fbtesting
-Minimal unit testing library for [FreeBASIC](https://www.freebasic.net/)
-## Usage
-```freebasic
 ' Include fbtesting.bas or fbtesting.bi.
 #include "fbtesting.bas"
 using fbtesting
@@ -35,22 +31,3 @@ tester.Run()
 
 ' Use non-zero return value if tests fail.
 if tester.Failed() then end 1
-```
-
-```sh
-> fbc example.bas
-> ./example
-=== RUN       Test Case
---- PASS      Test Case
-=== RUN       Skipped Test Case
---- SKIP      Skipped Test Case
-PASS          Test Example
-```
-## Testing
-fbtesting is used to test itself.
-```sh
-> fbc test.bas fbtesting.bas
-> ./test
-```
-## Acknowledgements
-The interface is inspired by [Go's testing package](https://pkg.go.dev/testing).
