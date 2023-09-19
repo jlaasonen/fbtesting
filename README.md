@@ -1,6 +1,11 @@
 # fbtesting
+
+[![builds.sr.ht status](https://builds.sr.ht/~jlaasonen/fbtesting/commits/main/.build.yml.svg)](https://builds.sr.ht/~jlaasonen/fbtesting/commits/main/.build.yml?)
+
 Minimal unit testing library for [FreeBASIC](https://www.freebasic.net/)
+
 ## Usage
+
 ```freebasic
 ' Include fbtesting.bas or fbtesting.bi.
 #include "fbtesting.bas"
@@ -46,11 +51,16 @@ if tester.Failed() then end 1
 --- SKIP      Skipped Test Case
 PASS          Test Example
 ```
+
 ## Testing
+
 fbtesting is used to test itself.
+
 ```sh
 > fbc test.bas fbtesting.bas
 > ./test
 ```
+
 ## Acknowledgements
+
 The interface is inspired by [Go's testing package](https://pkg.go.dev/testing).
